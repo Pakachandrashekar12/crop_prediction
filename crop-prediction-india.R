@@ -1,0 +1,8 @@
+data=read.csv("C:/Users/HP/OneDrive/Desktop/datafile (1).csv")
+is.na(data)
+colSums(is.na(data))
+head(data)
+attach(data)
+plot(data)
+m=lm(Yield..Quintal..Hectare..~Cost.of.Production....Quintal..C2+Cost.of.Cultivation....Hectare..A2.FL,data)
+predict(m)
